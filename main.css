@@ -138,6 +138,13 @@ input{
     text-align: center;
 }
 
+.popup{
+    background-color: white;
+    border:gray thin solid;
+    width:700px;
+    padding: 15px;
+}
+
 /** ELEMENTS **/
 
 .about_us_text{
@@ -167,4 +174,8 @@ input{
 
 .leader_title{
     color: white;
+}
+
+.black{
+    color:black;
 }
