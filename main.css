@@ -16,6 +16,12 @@ body{
 }
 
 
+input{
+    background-color: #FBF1F0;
+    
+}
+
+
 /**  DIVS **/
 
 .header{
@@ -58,9 +64,14 @@ body{
     
 }
 
+.about_us{
+    height:100vh;
+    background-image: url('images/sushi3_orange.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 100%;
+}
+
 /** ELEMENTS **/
 
-input{
-    background-color: #FBF1F0;
-    
-}
