@@ -17,8 +17,30 @@ body{
 
 
 input{
-    background-color: #FBF1F0;
-    
+    background-color: #FF4326;
+    border: none;
+    margin: 5px;
+    font-size: 120%;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: white;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: white;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: white;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: white;
+}
+
+.submit_button{
+    position: absolute;
+    top: 105%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 
 
@@ -50,6 +72,8 @@ input{
 
 .get_started{
     background-image: url('images/sayagata.png');
+    position: relative;
+    padding-bottom: 75px;
 }
 
 .get_started h1{
