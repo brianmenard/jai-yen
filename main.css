@@ -1,0 +1,42 @@
+/**
+COLORS
+
+orange: #FF4326
+green: #1CBD4D
+dark gray: #48403E
+light gray: #FBF1F0
+
+**/
+
+/** OVERRIDES **/
+
+body{
+    font-size: 16px;
+}
+
+
+/**  DIVS **/
+
+.header{
+    position: relative;
+}
+
+.header img{
+    width: 100%;
+}
+
+.logo_container{
+    position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 5;
+}
+
+.navigation{
+    position: fixed;
+    top:0;
+    right:0;
+    background-color: #FF4326;
+    z-index: 6;
+}
