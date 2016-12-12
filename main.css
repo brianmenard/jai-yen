@@ -46,6 +46,17 @@ input{
 
 /**  DIVS **/
 
+.nav_container{
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 99;
+    background-color: #FF4326;
+    width:75px;
+    height: 75px;
+    text-align: center;
+}
+
 .header{
     position: relative;
 }
@@ -91,11 +102,10 @@ input{
 
 .about_us{
     background-image: url('images/sushi3_orange.jpg');
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: center;
-    background-size: 100%;
+    background-position: center center;
     padding-bottom: 100px;
 }
 
@@ -141,8 +151,16 @@ input{
 }
 
 .map_row{
-    padding-top: 75px;
-    padding-bottom: 75px;
+    padding-top: 25px;
+    padding-bottom: 50px;
+}
+
+.map_row h1{
+    text-align: center;
+    font-size: 400%;
+    font-weight: 700;
+    color: #FF4326;
+    font-family: 'Satisfy', cursive;
 }
 
 .process_row{
@@ -156,6 +174,38 @@ input{
     color: #FFFFFF;
     font-family: 'Satisfy', cursive;
     padding-top: 25px;
+}
+
+.testimonials_row{
+    background-image: url('images/sayagata.png');
+}
+
+.testimonials_row h1{
+    text-align: center;
+    font-size: 400%;
+    font-weight: 700;
+    color: #FF4326;
+    font-family: 'Satisfy', cursive;
+}
+
+.quote_row_2{
+    position: relative;
+    background-image: url('images/sushi6.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.join_row{
+    background-image: url('images/sayagata.png');
+    text-align: center;
+}
+
+.join_row h1{
+    color:#FF4326;
+    font-family: 'Satisfy', cursive;
+    font-size: 300%;
+    font-weight: 700;
+    text-align: center;
 }
 
 /** ELEMENTS **/
@@ -201,3 +251,87 @@ input{
     padding: 50px;
 }
 
+.testimonial_image_1{
+    width:200px;
+}
+
+.testimonial_image_2{
+    width:200px;
+    margin-top: -50px;
+}
+
+.testimonial_image_3{
+    width:200px;
+    margin-top: -175px;
+    margin-left:150px;
+}
+
+.testimonial_image_4{
+    width:200px;
+    margin-top: -300px;
+    margin-left:175px;
+}
+
+.testimonial_image_5{
+    width:200px;
+    margin-top: -175px;
+    margin-left:350px;
+}
+
+.testimonial_image_6{
+    width:200px;
+    margin-top: -50px;
+    margin-left:325px;
+}
+
+.black{
+    color: black;
+}
+
+.get_started_button{
+    margin: 25px;
+    font-size: 200%;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    background-color: #FF4326;
+    border-bottom: thick solid #DC2103;
+    border-left: thick solid #DC2103;
+}
+
+
+/** SIDE NAV STYLING **/
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/** END SIDENAV STYLING **/

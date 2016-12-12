@@ -28,6 +28,10 @@
 <script src="lg-map/scale.raphael.js" type="text/javascript"></script>
 <script src="lg-map/lg-map.js" type="text/javascript"></script>
 
+<!-- Google Icons -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
 <title>Jai Yen</title>
 </head>
 
@@ -35,14 +39,20 @@
 	
 <!-- HEADER -->
 <div class='container-fluid'>
-	<div class='navigation'>
-		Home
-		<br>About Us
-		<br>Locations
-		<br>Our Process
-		<br>Franchise Testimonials
-		<br>News
+	<div class='nav_container'>
+		<span style="font-size:30px;cursor:pointer" onclick="openNav()">
+			<i class="material-icons" style='font-size:75px; color: white;'>menu</i>
+		</span>
 	</div>
+	<div id="mySidenav" class="sidenav">
+  		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  		<a href="#home">Home</a>
+  		<a href="#about_us">About Us</a>
+  		<a href="#map_row">Locations</a>
+  		<a href="#process_row">Process</a>
+  		<a href="#testimonials_row">Testimonials</a>
+	</div>
+	<a name='home'></a>
 	<div class='row header'>
 		<div class='logo_container'>
 			<img src='images/logo.png'>
@@ -57,6 +67,7 @@
 <div class='row get_started'>
 	<div class='col-md-3'></div>
 	<div class='col-md-6'>
+		<a name='get_started'></a>
 		<h1 class='start_here_header'>Start Here!</h1>
 	        <p>Fill out the form below and we will be in touch shortly.<br><small>**International opportunities available**</small></p>
 	        <br>
@@ -434,7 +445,7 @@
 					<tr>
 						<td align="right" colspan="2">
 							<p><sup>*</sup>Required field.</p>
-							<input type="button" name="submit" class="submit_form submit_button" value="submit" onclick="send_mail();versaTagObj.generateRequest('www.mooyahfranchise.com/franchiseformsubmit.htm');" />
+							<input type="button" name="submit" class="submit_form submit_button" value="submit" onclick="#');" />
 						</td>
 					</tr>
 				</table>
@@ -448,6 +459,7 @@
 <!-- ABOUT US -->
 
 <div class='row about_us'>
+	<a name='about_us'></a>
 	<div class='col-md-2'></div>
 	<div class='col-md-8'>
 		<div class='about_us_link_container'>
@@ -486,7 +498,7 @@
 		    <div class="item">
 				<h1 class='about_us_header'>Our Leaders</h1>
 		    	<div class='row'>
-		    		<div class='col-md-3 leadership_container'>
+		    		<div class='col-xs-3 leadership_container'>
 		    			<img src='images/leader_1.png'>
 		    			<h2 class='leader_header'>Bill Buckley</h2>
 		    			<p class='leader_title'>
@@ -523,7 +535,7 @@
 							</div>
 						  </div>
 		    		</div>
-		    		<div class='col-md-3 leadership_container'>
+		    		<div class='col-xs-3 leadership_container'>
 		    			<img src='images/leader_2.png'>
 		    			<h2 class='leader_header'>Jim Hasaishi</h2>
 		    			<p class='leader_title'>
@@ -560,7 +572,7 @@
 							</div>
 						  </div>
 		    		</div>
-		    		<div class='col-md-3 leadership_container'>
+		    		<div class='col-xs-3 leadership_container'>
 		    			<img src='images/leader_3.png'>
 		    			<h2 class='leader_header'>Christopher Kelly</h2>
 		    			<p class='leader_title'>
@@ -572,7 +584,7 @@
 						  	<div class='row'>
 						  		<div class='col-md-4'>
 									<img src='images/leader_3.png'>
-					    			<h2 class='leader_header black'>Christopher Kelly</h2>
+					    			<h2 class='leader_header black'>Chris Kelly</h2>
 					    			<p class='leader_title black'>
 					    				Chief Operation Officer
 					    			</p>
@@ -597,7 +609,7 @@
 							</div>
 						  </div>
 						</div>
-		    		<div class='col-md-3 leadership_container'>
+		    		<div class='col-xs-3 leadership_container'>
 		    			<img src='images/leader_4.png'>
 		    			<h2 class='leader_header'>Janet Wriggle</h2>
 		    			<p class='leader_title'>
@@ -655,6 +667,8 @@
 
 <!-- END ABOUT US -->
 
+<!-- QUOTE ROW -->
+
 <div class='row quote_row'>
 	<div class='col-md-3'></div>
 	<div class='col-md-6 quote_container'>
@@ -667,7 +681,13 @@
 	<div class='col-md-3'></div>
 </div>
 
+<!-- END QUOTE ROW -->
+
+<!-- MAP ROW -->
+
 <div class='row map_row'>
+	<a name='map_row'></a>
+	<h1>Market Availability</h1>
 	<div class='col-md-2'></div>
 	<div class='col-md-8'>
 		<div class="lg-map-wrapper" data-map="lg-map/usa.js">
@@ -678,7 +698,12 @@
 	<div class='col-md-2'></div>
 </div>
 
+<!-- END MAP ROW -->
+
+<!-- PROCESS ROW -->
+
 <div class='row process_row'>
+	<a name='process_row'></a>
 	<h1>Our Process</h1>
 	<div class='col-md-1'></div>
 	<div class='col-md-10'>
@@ -686,6 +711,76 @@
 	</div>
 	<div class='col-md-1'></div>
 </div>
+
+<!-- END PROCESS ROW -->
+
+<!-- TESTIMONIAL ROW -->
+
+<div class='row testimonials_row'>
+	<a name='testimonials_row'></a>
+	<h1>Franchisee Testimonials</h1>
+	<div class='col-md-2'></div>
+	<div class='col-md-4'>
+		<br><br>
+		<p>
+		Our top restaurants just happen to be owned and operated by families. 
+		Brothers. Cousins. Husbands and wives. Fathers and sons. Coincidence? Heck no!
+		</p>
+		<p>
+		There’s something about the Jai Yen experience that’s a perfect fit for 
+		families looking to share something awesome together, whether it’s a meal 
+		at Jai Yen or a thriving multi-unit operation.
+		</p>
+	</div>
+		<div class='col-xs-6'>
+			<div class='testimonial_image_1'>
+				<img src='images/testimonial_1.png' class='img-responsive'>
+			</div>
+			<div class='testimonial_image_2'>
+				<img src='images/testimonial_2.png' class='img-responsive'>
+			</div>
+			<div class='testimonial_image_3'>
+				<img src='images/testimonial_3.png' class='img-responsive'>
+			</div>
+			<div class='testimonial_image_4'>
+				<img src='images/testimonial_4.png' class='img-responsive'>
+			</div>
+			<div class='testimonial_image_5'>
+				<img src='images/testimonial_5.png' class='img-responsive'>
+			</div>
+			<div class='testimonial_image_6'>
+				<img src='images/testimonial_6.png' class='img-responsive'>
+			</div>
+		</div>
+</div>
+
+<!-- END TESTIMONIAL ROW -->
+
+<!-- QUOTE ROW 2 -->
+
+<div class='row quote_row_2'>
+	<div class='col-md-3'></div>
+	<div class='col-md-6 quote_container'>
+		<h1>
+		“You can tell Jai Yen is obsessed with the guest experience by the 
+		contagious attitude that employees have when they walk in the door.”
+		</h1>
+		<h2 style='color:black;'>- Scott Adams, Development Agent</h2>
+	</div>
+	<div class='col-md-3'></div>
+</div>
+
+<!-- END QUOTE ROW 2 -->
+
+<!-- JOIN ROW -->
+
+<div class='row join_row'>
+	<h1>Ready to join the Jai Yen family?</h1>
+	<a href='#get_started'><button type="button" class="btn btn-secondary get_started_button">Get Started</button></a>
+</div>
+
+<!-- END JOIN ROW -->
+
 
 </div><!-- container-fluid -->
 
@@ -779,6 +874,18 @@
 
     });
   </script>
+<!-- SIDENAV SCRIPTS -->
+  <script>
+	function openNav() {
+	    document.getElementById("mySidenav").style.width = "250px";
+	}
+	
+	function closeNav() {
+	    document.getElementById("mySidenav").style.width = "0";
+	}
+</script>
+
+<!-- END SIDENAV SCRIPTS -->
 
 </body>
 </html>

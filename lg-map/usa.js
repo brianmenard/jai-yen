@@ -40,7 +40,7 @@ var config = {
 	//size of pins on the map
 	pinSize : 10,
 	//default text on map load if using text
-	defaultText: "<h1>Map Legend:</h1><br /><p><img src='images/orange_block.jpg' class='map_block'> = Multi-Unit Opportunities Available</p>",
+	defaultText: "<h2>Map Legend:</h2><br /><p><img src='images/orange_block.jpg' class='map_block'> = Multi-Unit Opportunities Available</p>",
 	//if true, displays current mouse position on screen to help position pins
 	//Note that when this is true, the map is not resized so the mouse position is to original scale
 	displayMousePosition: false
