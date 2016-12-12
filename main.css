@@ -151,7 +151,7 @@ input.radio{
 .quote_row{
     position: relative;
     background-image: url('images/sushi4_bw.jpg');
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
@@ -218,7 +218,7 @@ input.radio{
 .quote_row_2{
     position: relative;
     background-image: url('images/sushi6.jpg');
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
@@ -242,8 +242,6 @@ input.radio{
 
 .about_us_text{
     color:white;
-    margin-left: 150px;
-    margin-right: 150px;
 }
 
 .about_us_header{
@@ -327,6 +325,11 @@ input.radio{
     background-color: #FF4326;
     border-bottom: thick solid #DC2103;
     border-left: thick solid #DC2103;
+}
+
+.lg-map-wrapper#lg-map-text{
+    height:200px;
+    border:thin red solid;
 }
 
 

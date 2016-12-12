@@ -81,6 +81,7 @@
 						<td width="50%">
 							<input placeholder=" First Name*" type="text" name="name" class="textbox" />
 						</td>
+						<br>
 						<td width="50%">
 							<input placeholder=" Last Name*" type="text" name="last_name" class="textbox" />
 						</td>
@@ -475,7 +476,7 @@
 		    <a href='#' data-target="#myCarousel" data-slide-to="2">Leadership</a>
 	    </div>
 		<br><br><br>
-		<div id="myCarousel" class="carousel slide padded feedback_box">
+		<div id="myCarousel" class="carousel slide">
 		  <!-- Wrapper for slides -->
 		  <div class="carousel-inner" role="listbox">
 		    <div class="item active">
@@ -505,7 +506,7 @@
 		    <div class="item">
 				<h1 class='about_us_header'>Our Leaders</h1>
 		    	<div class='row'>
-		    		<div class='col-xs-3 leadership_container'>
+		    		<div class='col-md-3 leadership_container'>
 		    			<img src='images/leader_1.png'>
 		    			<h2 class='leader_header'>Bill Buckley</h2>
 		    			<p class='leader_title'>
@@ -542,7 +543,7 @@
 							</div>
 						  </div>
 		    		</div>
-		    		<div class='col-xs-3 leadership_container'>
+		    		<div class='col-md-3 leadership_container'>
 		    			<img src='images/leader_2.png'>
 		    			<h2 class='leader_header'>Jim Hasaishi</h2>
 		    			<p class='leader_title'>
@@ -579,7 +580,7 @@
 							</div>
 						  </div>
 		    		</div>
-		    		<div class='col-xs-3 leadership_container'>
+		    		<div class='col-md-3 leadership_container'>
 		    			<img src='images/leader_3.png'>
 		    			<h2 class='leader_header'>Christopher Kelly</h2>
 		    			<p class='leader_title'>
@@ -616,7 +617,7 @@
 							</div>
 						  </div>
 						</div>
-		    		<div class='col-xs-3 leadership_container'>
+		    		<div class='col-md-3 leadership_container'>
 		    			<img src='images/leader_4.png'>
 		    			<h2 class='leader_header'>Janet Wriggle</h2>
 		    			<p class='leader_title'>
@@ -699,7 +700,7 @@
 	<div class='col-md-8'>
 		<div class="lg-map-wrapper" data-map="lg-map/usa.js">
 	  		<div id="lg-map"></div>
-	  		<div class="lg-map-text"></div>
+	  		<div class="lg-map-text" id='lg-map-text' style='height:200px;'></div>
 		</div>
 	</div>
 	<div class='col-md-2'></div>
@@ -723,11 +724,11 @@
 
 <!-- TESTIMONIAL ROW -->
 
-<div class='row testimonials_row'>
+<div class='row testimonials_row hidden-xs'>
 	<a name='testimonials_row'></a>
 	<h1>Franchisee Testimonials</h1>
 	<div class='col-md-2'></div>
-	<div class='col-md-4'>
+	<div class='col-sm-4'>
 		<br><br>
 		<p>
 		Our top restaurants just happen to be owned and operated by families. 
@@ -739,7 +740,7 @@
 		at Jai Yen or a thriving multi-unit operation.
 		</p>
 	</div>
-		<div class='col-xs-6'>
+		<div class='col-sm-6'>
 			<div class='testimonial_image_1'>
 				<a href="#test1" class='test1_open'><img src='images/testimonial_1.png' class='img-responsive'></a>
 			</div>
